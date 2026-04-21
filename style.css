@@ -1,0 +1,132 @@
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Outfit', sans-serif;
+            background: linear-gradient(135deg, #ffffff, #e6f7ff);
+            color: #1a1a1a;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        .bubble {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(173, 216, 230, 0.3);
+            pointer-events: none;
+            animation: floatAround 40s linear infinite;
+        }
+
+        @keyframes floatAround {
+            0% {
+                transform: translate(0, 0) scale(0.8);
+                opacity: 0.3;
+            }
+
+            25% {
+                transform: translate(30vw, -20vh) scale(1);
+                opacity: 0.4;
+            }
+
+            50% {
+                transform: translate(-20vw, -30vh) scale(1.2);
+                opacity: 0.3;
+            }
+
+            75% {
+                transform: translate(15vw, -50vh) scale(0.9);
+                opacity: 0.2;
+            }
+
+            100% {
+                transform: translate(-10vw, -80vh) scale(1.1);
+                opacity: 0;
+            }
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border-radius: 1.5rem;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .glass:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+
+        .scroll-effect {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .scroll-effect.visible {
+            opacity: 1;
+            transform: none;
+        }
+
+        .floating-3d {
+            perspective: 1000px;
+        }
+
+        .floating-3d:hover {
+            transform: rotateX(15deg) rotateY(15deg);
+        }
+
+        .blob {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(135deg, #00c9ff 0%, #92fe9d 100%);
+            border-radius: 50%;
+            filter: blur(100px);
+            opacity: 0.6;
+            animation: moveBlob 15s infinite alternate ease-in-out;
+
+        }
+
+        .blob-left {
+            top: -28vh;
+            left: 10%;
+            animation-delay: -5s;
+        }
+
+        .blob-right {
+            top: 50%;
+            right: 10%;
+            animation-delay: -2s;
+        }
+
+        @keyframes moveBlob {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translate(100px, 200px);
+            }
+        }
+
+        canvas,
+        #bubbles-container {
+            pointer-events: none;
+        }
+
+        h1 {
+            letter-spacing: normal;
+            word-spacing: normal;
+        }
+
+        .neon-text {
+            background: linear-gradient(290deg, #230AFF 30%, #1FA2FF 70%, #38E1FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
