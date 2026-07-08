@@ -2,57 +2,34 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webyow - Govt Registered AI, Software & Digital Products Company</title>
-
-    <!-- SEO Meta -->
-    <meta name="title" content="Webyow - Govt Registered Software & AI Company | Client & Own Products">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebYow — We Build Your World | Premium Software Development</title>
     <meta name="description"
-        content="Webyow is India's government-registered digital software company. We build custom software, websites, AI systems, games for clients and create our own innovative products like YowShare, Crave dish, Yow CRM.">
+        content="WebYow builds custom software, web applications, mobile apps, ERP solutions, AI systems, Games and business automation. Transform your ideas into extraordinary digital experiences." />
     <meta name="keywords"
-        content="Webyow, Govt Registered Software Company, AI Development, Custom Software, ERP, E-commerce, File Sharing, CRM, Web Development, Games, India">
-    <meta name="author" content="Webyow">
-    <meta name="robots" content="index, follow">
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.webyow.com">
-    <meta property="og:title" content="Webyow - Govt Registered Digital Innovation Company">
+        content="software development, web applications, mobile apps, ERP, AI solutions, business automation, custom software, cloud solutions, Games" />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="alternate" href="https://webyow.com" hreflang="en-us" />
+    <link rel="canonical" href="https://webyow.com" />
+    <meta property="og:title" content="WebYow — We Build Your World" />
     <meta property="og:description"
-        content="We deliver world-class software, websites, AI, games for clients and craft our own breakthrough products.">
+        content="Transforming ideas into extraordinary digital experiences. Custom software, web apps, mobile apps, ERP, AI solutions." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://webyow.com" />
+    <meta name="theme-color" content="#2563EB" />
     <meta property="og:image" content="https://www.webyow.com/webyow-logo.png">
-    <meta property="og:locale" content="en_IN">
-    <meta property="og:site_name" content="Webyow">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://www.webyow.com">
-    <meta name="twitter:title" content="Webyow - Software, AI, Games & Own Products">
-    <meta name="twitter:description"
-        content="Government registered company building client-centric solutions and own SaaS products.">
-    <meta name="twitter:image" content="https://www.webyow.com/webyow-logo.png">
-    <meta name="twitter:creator" content="@webyow">
-
-    <!-- Canonical -->
-    <link rel="canonical" href="https://www.webyow.com">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="webyow-logo.png">
-
-    <!-- Fonts Preload -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" as="style"
-        onload="this.onload=null;this.rel='stylesheet'">
-
-    <!-- Tailwind CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="style.css">
-    <!-- Structured Data -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/webyow-logo.png">
+    <!-- Schema.org structured data -->
     <script type="application/ld+json">
-    {
+        {
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "Webyow",
@@ -70,374 +47,956 @@
 </head>
 
 <body>
-    <!-- Animated SVG Divider -->
-    <svg class="w-full" viewBox="0 0 1440 320">
-        <path fill="#f0f8ff" fill-opacity="1"
-            d="M0,96L48,112C96,128,192,160,288,149.3C384,139,480,85,576,85.3C672,85,768,139,864,170.7C960,203,1056,213,1152,192C1248,171,1344,117,1392,90.7L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
-        </path>
-    </svg>
-    <!-- Bubble Background Layer -->
-    <div id="bubbles-container" class="fixed top-0 left-0 w-full h-full -z-10 overflow-hidden"></div>
 
-    <!-- Hero Section with 3D Background Blobs -->
-    <section style="height: 65vh;" class="section relative flex flex-col justify-center items-center text-center px-6">
-        <div class="blob blob-left"></div>
-        <div class="blob blob-right"></div>
-        <div style="margin-top: -30%;" class="z-10">
-            <img src="webyow-logo.png" style="height: 50%; width: 50%;margin-left: -10%;" alt="Webyow Logo"
-                class="w-24 h-24 mb-6 animate__animated animate__bounceInDown">
-            <h1
-                class="neon-text text-6xl sm:text-7xl font-extrabold leading-tight mb-4 animate__animated animate__fadeInUp">
-                WebYow
-            </h1>
-            <p
-                class="text-lg sm:text-xl text-gray-700 max-w-2xl mb-6 animate__animated animate__fadeInUp animate__delay-1s">
-                Software • Websites • AI Systems • Games <br>
-                We build for clients and create our own breakthrough products.
+    <!-- ============================================================
+    NAVBAR
+    ============================================================ -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <a href="#" class="nav-logo" aria-label="WebYow Home">
+            <span class="logo-icon"><img width="30px" src="assets/logos/bg-logo-w.svg" alt=""></span>
+            <span>WebYow</span>
+        </a>
+
+        <ul class="nav-links" id="navLinks" role="menubar">
+            <li role="none"><a href="home" role="menuitem">Home</a></li>
+            <li role="none"><a href="about.html" role="menuitem">About</a></li>
+            <li role="none"><a href="services" role="menuitem">Services</a></li>
+            <li role="none"><a href="products" role="menuitem">Products</a></li>
+            <li role="none"><a href="contact" role="menuitem">Contact</a></li>
+            <li role="none"><a href="contact" class="btn-nav" role="menuitem">Get Started</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ============================================================
+    FIXED BOTTOM BAR
+    ============================================================ -->
+    <div class="bottom-bar" role="toolbar" aria-label="Quick actions">
+        <a href="https://wa.me/9500667884" target="_blank" class="bar-btn whatsapp" aria-label="Contact via WhatsApp" title="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.instagram.com/webyow/" target="_blank" class="bar-btn instagram" aria-label="Follow on Instagram" title="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/webyow/" target="_blank" class="bar-btn linkedin" aria-label="Connect on LinkedIn" title="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/webyow" target="_blank" class="bar-btn github" aria-label="View on GitHub" title="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <div class="divider"></div>
+
+        <button class="bar-btn theme-toggle-bottom" id="themeToggleBottom" aria-label="Toggle theme">
+            <span class="toggle-track">
+                <i class="fas fa-moon" id="themeIconBottom"></i>
+                <span id="themeDotBottom"></span>
+                <span id="themeLabelBottom"></span>
+            </span>
+        </button>
+    </div>
+
+    <!-- ============================================================
+    HERO SECTION
+    ============================================================ -->
+    <section class="hero" id="home" aria-label="Hero">
+        <div class="hero-bg"></div>
+        <canvas id="particles-canvas"></canvas>
+
+        <div class="float-orb float-orb-1"></div>
+        <div class="float-orb float-orb-2"></div>
+        <div class="float-orb float-orb-3"></div>
+
+        <div class="hero-content" data-parallax>
+            <h1 class="hero-title">WEBYOW</h1>
+            <p class="hero-sub">We Build Your World</p>
+            <p class="hero-desc">
+                Transforming ideas into extraordinary digital experiences — from custom software
+                to AI-driven platforms that empower businesses to thrive.
             </p>
-            <a href="#services"
-                class="bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-8 py-3 rounded-full text-lg font-bold hover:scale-105 transition transform duration-300 animate__animated animate__zoomIn animate__delay-2s">
-                Explore Our Vision
-            </a>
+            <div class="hero-btns">
+                <a href="#services" class="btn btn-primary">
+                    Explore Services <i class="fas fa-arrow-right icon-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    Start Project <i class="fas fa-chevron-right icon-right"></i>
+                </a>
+            </div>
         </div>
-    </section>
 
-    <!-- Services Section -->
-    <section id="services" class="section px-6 text-center bg-blue-50">
-        <h2 class="text-4xl font-bold mb-12 neon-text scroll-effect">Our Focus Areas</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
-            <div class="glass p-8 scroll-effect floating-3d">
-                <img src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png" class="w-20 mx-auto mb-4"
-                    alt="Product Icon">
-                <h3 class="font-semibold text-2xl mb-2">SaaS & Custom Software</h3>
-                <p class="text-gray-800">We build cloud-native apps, ERPs, payment platforms, and own SaaS products —
-                    modern, scalable, and tailored for real business impact.</p>
-            </div>
-            <div class="glass p-8 scroll-effect floating-3d">
-                <img src="https://cdn-icons-png.flaticon.com/512/1048/1048937.png" class="w-20 mx-auto mb-4"
-                    alt="Design Icon">
-                <h3 class="font-semibold text-2xl mb-2">Intuitive UX/UI</h3>
-                <p class="text-gray-800">Interfaces that feel like magic — for client websites, games, dashboards. Every
-                    click designed for joy and productivity.</p>
-            </div>
-            <div class="glass p-8 scroll-effect floating-3d">
-                <img src="https://cdn-icons-png.flaticon.com/512/1048/1048983.png" class="w-20 mx-auto mb-4"
-                    alt="AI Icon">
-                <h3 class="font-semibold text-2xl mb-2">AI & Smart Systems</h3>
-                <p class="text-gray-800">Intelligent logic, predictive engines, and adaptive systems for client
-                    solutions and our own product ecosystem.</p>
+        <div class="scroll-indicator" aria-hidden="true">
+            <span>Scroll</span>
+            <div class="mouse">
+                <div class="wheel"></div>
             </div>
         </div>
     </section>
 
-    <!-- About Section (Govt Registered + Client + Own Products) -->
-    <section id="about" class="section px-6 text-center bg-white relative overflow-hidden">
-        <h2 class="text-4xl font-bold mb-8 neon-text scroll-effect">Who We Are</h2>
-        <div class="max-w-4xl mx-auto text-lg text-gray-700 scroll-effect">
-            <p class="mb-4">
-                Webyow is a <strong>government-registered digital software company</strong> with a dual heartbeat:
-                building elite software, websites, AI systems, and games for clients — while relentlessly crafting our
-                own innovative products. We deliver results for enterprises, startups, and brands.
+    <!-- ============================================================
+    ABOUT SECTION
+    ============================================================ -->
+    <section class="section" id="about" aria-label="About WebYow">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <!-- <span class="section-label reveal">About Us</span> -->
+                    <h1 class="section-title reveal">About <span class="highlight">WebYow</span></h1>
+                    <p class="reveal reveal-delay-1">
+                        At WebYow, we don't just build software. We create digital experiences that
+                        empower businesses to thrive in a connected world. From startups to enterprises,
+                        we craft solutions that are as ambitious as your vision.
+                    </p>
+                    <div class="about-features reveal reveal-delay-2">
+                        <div class="feature-item">
+                            <span class="fi-icon"><i class="fas fa-bolt"></i></span>
+                            <span class="fi-text">Innovation First</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="fi-icon"><i class="fas fa-handshake"></i></span>
+                            <span class="fi-text">Partnership Mindset</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="fi-icon"><i class="fas fa-shield-alt"></i></span>
+                            <span class="fi-text">Security Focused</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="fi-icon"><i class="fas fa-rocket"></i></span>
+                            <span class="fi-text">Scalable by Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image-wrapper reveal reveal-delay-2">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop&crop=center&auto=format"
+                        alt="WebYow team collaborating on software development" loading="lazy" />
+                    <div class="about-image-overlay"></div>
+                    <div class="floating-badge">
+                        <span class="badge-icon"><i class="fas fa-code"></i></span>
+                        <span class="badge-text">
+                            120+ Projects
+                            <small>Delivered with excellence</small>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    SERVICES SECTION
+    ============================================================ -->
+    <section class="section" id="services" style="background:var(--bg-secondary);" aria-label="Services">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title reveal">Our <span class="highlight">Services</span></h2>
+                <p class="section-desc mx-auto reveal reveal-delay-1">
+                    End-to-end development for every layer of your digital ecosystem.
+                </p>
+            </div>
+
+            <div class="services-grid" style="margin-top:48px;">
+                <div class="service-card reveal reveal-delay-1">
+                    <div class="card-glow"></div>
+                    <div class="icon"><i class="fas fa-code"></i></div>
+                    <h3>Custom Software</h3>
+                    <p>Tailored solutions built to solve your unique business challenges with precision.</p>
+                </div>
+                <div class="service-card reveal reveal-delay-2">
+                    <div class="card-glow"></div>
+                    <div class="icon"><i class="fas fa-globe"></i></div>
+                    <h3>Web Development</h3>
+                    <p>High-performance web apps with stunning UX and scalable cloud-native architecture.</p>
+                </div>
+                <div class="service-card reveal reveal-delay-3">
+                    <div class="card-glow"></div>
+                    <div class="icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Mobile Apps</h3>
+                    <p>Native and cross-platform mobile experiences for iOS and Android that users love.</p>
+                </div>
+                <div class="service-card reveal reveal-delay-4">
+                    <div class="card-glow"></div>
+                    <div class="icon"><i class="fas fa-building"></i></div>
+                    <h3>ERP Solutions</h3>
+                    <p>Streamline operations with intelligent enterprise resource planning systems.</p>
+                </div>
+                <div class="service-card reveal reveal-delay-5">
+                    <div class="card-glow"></div>
+                    <div class="icon"><i class="fas fa-brain"></i></div>
+                    <h3>AI &amp; Automation</h3>
+                    <p>Intelligent automation and machine learning for smarter, data-driven business.</p>
+                </div>
+                <div class="service-card reveal reveal-delay-6">
+                    <div class="card-glow"></div>
+                    <div class="icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3>UI/UX Design</h3>
+                    <p>Human-centered design that delights users and drives meaningful engagement.</p>
+                </div>
+                <div class="service-card reveal reveal-delay-8">
+                    <div class="card-glow"></div>
+                    <div class="icon"><i class="fas fa-tools"></i></div>
+                    <h3>Maintenance</h3>
+                    <p>Ongoing support, optimization, and security to keep your systems running flawlessly.</p>
+                </div>
+                <div class="service-card reveal reveal-delay-9">
+                    <div class="card-glow"></div>
+                    <div class="icon"><i class="fas fa-gamepad"></i></div>
+                    <h3>Game Development</h3>
+                    <p>Immersive gaming experiences designed to captivate and engage players.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    PRODUCTS SECTION
+    ============================================================ -->
+    <section class="section" id="products" aria-label="Products">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-label reveal">Our Products</span>
+                <h2 class="section-title reveal">Built for <span class="highlight">Impact</span></h2>
+                <p class="section-desc mx-auto reveal reveal-delay-1">
+                    Innovative solutions crafted to solve real-world problems.
+                </p>
+            </div>
+
+            <div class="products-grid" style="margin-top:48px;">
+                <div class="product-card reveal reveal-delay-1">
+                    <span class="p-icon"><i class="fas fa-file-invoice"></i></span>
+                    <h4>Billmets</h4>
+                    <p>Smart invoicing &amp; billing automation.</p>
+                    <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="product-card reveal reveal-delay-2">
+                    <span class="p-icon"><i class="fas fa-truck"></i></span>
+                    <h4>Mototuf</h4>
+                    <p>Logistics &amp; fleet management platform.</p>
+                    <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="product-card reveal reveal-delay-3">
+                    <span class="p-icon"><i class="fas fa-graduation-cap"></i></span>
+                    <h4>Learnleda</h4>
+                    <p>EdTech solution for modern learning.</p>
+                    <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="product-card reveal reveal-delay-4">
+                    <span class="p-icon"><i class="fas fa-share-alt"></i></span>
+                    <h4>YowShare</h4>
+                    <p>Collaborative file sharing &amp; sync.</p>
+                    <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    TECHNOLOGIES SECTION
+    ============================================================ -->
+    <section class="section" style="background:var(--bg-secondary);" aria-label="Technologies">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-label reveal">Tech Stack</span>
+                <h2 class="section-title reveal">Powered by <span class="highlight">Excellence</span></h2>
+                <p class="section-desc mx-auto reveal reveal-delay-1">
+                    We use the most advanced tools and frameworks to build future-ready solutions.
+                </p>
+            </div>
+            <div class="tech-grid reveal reveal-delay-2">
+                <span class="tech-badge"><span>Python</span></span>
+                <span class="tech-badge"><span>Django</span></span>
+                <span class="tech-badge"><span>Angular</span></span>
+                <span class="tech-badge"><span>React</span></span>
+                <span class="tech-badge"><span>Flutter</span></span>
+                <span class="tech-badge"><span>MySQL</span></span>
+                <span class="tech-badge"><span>PostgreSQL</span></span>
+                <span class="tech-badge"><span>Docker</span></span>
+                <span class="tech-badge"><span>Firebase</span></span>
+                <span class="tech-badge"><span>AI / ML</span></span>
+                <span class="tech-badge"><span>Kubernetes</span></span>
+                <span class="tech-badge"><span>GraphQL</span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    WHY CHOOSE WEBYOW
+    ============================================================ -->
+    <section class="section" id="why" aria-label="Why choose WebYow">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title reveal">Why <span class="highlight">WebYow</span></h2>
+                <p class="section-desc mx-auto reveal reveal-delay-1">
+                    We combine innovation, security, and speed to deliver excellence at every step.
+                </p>
+            </div>
+
+            <div class="why-grid" style="margin-top:48px;">
+                <div class="why-card reveal reveal-delay-1">
+                    <span class="w-icon">🚀</span>
+                    <h4>Innovative</h4>
+                    <p>Cutting-edge solutions that push boundaries and redefine possibilities.</p>
+                </div>
+                <div class="why-card reveal reveal-delay-2">
+                    <span class="w-icon">📈</span>
+                    <h4>Scalable</h4>
+                    <p>Built to grow with your business, handling millions of users seamlessly.</p>
+                </div>
+                <div class="why-card reveal reveal-delay-3">
+                    <span class="w-icon">🔒</span>
+                    <h4>Secure</h4>
+                    <p>Enterprise-grade security at every layer, from code to infrastructure.</p>
+                </div>
+                <div class="why-card reveal reveal-delay-4">
+                    <span class="w-icon">💰</span>
+                    <h4>Affordable</h4>
+                    <p>High-quality solutions with transparent pricing and no hidden fees.</p>
+                </div>
+                <div class="why-card reveal reveal-delay-5">
+                    <span class="w-icon">⚡</span>
+                    <h4>Fast Delivery</h4>
+                    <p>Agile execution without compromise, delivering value in record time.</p>
+                </div>
+                <div class="why-card reveal reveal-delay-6">
+                    <span class="w-icon">💎</span>
+                    <h4>Dedicated Support</h4>
+                    <p>We're with you every step of the way, from strategy to launch and beyond.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    PROCESS TIMELINE
+    ============================================================ -->
+    <section class="section" style="background:var(--bg-secondary);" aria-label="Our process">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title reveal">Our <span class="highlight">Process</span></h2>
+                <p class="section-desc mx-auto reveal reveal-delay-1">
+                    A proven journey from idea to impact, built on transparency and collaboration.
+                </p>
+            </div>
+            <div class="process-timeline reveal reveal-delay-2">
+                <div class="process-step"><span class="step-num">1</span><span class="step-label">Discover</span></div>
+                <div class="process-step"><span class="step-num">2</span><span class="step-label">Plan</span></div>
+                <div class="process-step"><span class="step-num">3</span><span class="step-label">Design</span></div>
+                <div class="process-step"><span class="step-num">4</span><span class="step-label">Develop</span></div>
+                <div class="process-step"><span class="step-num">5</span><span class="step-label">Test</span></div>
+                <div class="process-step"><span class="step-num">6</span><span class="step-label">Deploy</span></div>
+                <div class="process-step"><span class="step-num">7</span><span class="step-label">Support</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    STATISTICS
+    ============================================================ -->
+    <section class="section" aria-label="Statistics">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-label reveal">By the Numbers</span>
+                <h2 class="section-title reveal">Our <span class="highlight">Impact</span></h2>
+            </div>
+            <div class="stats-grid" style="margin-top:40px;">
+                <div class="stat-item reveal reveal-delay-1">
+                    <span class="stat-number" data-count="120">0</span>
+                    <span class="stat-label">Projects Delivered</span>
+                </div>
+                <div class="stat-item reveal reveal-delay-2">
+                    <span class="stat-number" data-count="60">0</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+                <div class="stat-item reveal reveal-delay-3">
+                    <span class="stat-number" data-count="8">0</span>
+                    <span class="stat-label">Products Launched</span>
+                </div>
+                <div class="stat-item reveal reveal-delay-4">
+                    <span class="stat-number" data-count="100">0</span>
+                    <span class="stat-label">% Client Satisfaction</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    TESTIMONIALS
+    ============================================================ -->
+    <section class="section" style="background:var(--bg-secondary);" aria-label="Testimonials">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title reveal">What Our <span class="highlight">Clients Say</span></h2>
+            </div>
+            <div class="testimonials-slider" style="margin-top:40px;">
+                <div class="testimonials-track">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <blockquote>“WebYow transformed our legacy system into a modern, scalable platform. The team is
+                            exceptional.”</blockquote>
+                        <div class="author">
+                            <div class="avatar">JD</div>
+                            <div>
+                                <div class="name">John D.</div>
+                                <div class="role">CTO, FinTech Inc.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <blockquote>“The mobile app they built for us boosted engagement by 200%. A true game-changer.”
+                        </blockquote>
+                        <div class="author">
+                            <div class="avatar">SM</div>
+                            <div>
+                                <div class="name">Sarah M.</div>
+                                <div class="role">CEO, HealthWise</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <blockquote>“Their AI automation saved us hundreds of hours. WebYow is our trusted tech
+                            partner.”</blockquote>
+                        <div class="author">
+                            <div class="avatar">AR</div>
+                            <div>
+                                <div class="name">Alex R.</div>
+                                <div class="role">Operations, LogiCore</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <blockquote>“From design to deployment, they delivered a flawless ERP system that our team
+                            loves.”</blockquote>
+                        <div class="author">
+                            <div class="avatar">LW</div>
+                            <div>
+                                <div class="name">Lisa W.</div>
+                                <div class="role">Director, GreenEnergy</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <blockquote>“WebYow's cloud migration strategy was seamless. Highly recommend their expertise.”
+                        </blockquote>
+                        <div class="author">
+                            <div class="avatar">MP</div>
+                            <div>
+                                <div class="name">Mike P.</div>
+                                <div class="role">VP, CloudFirst</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <blockquote>“The UI/UX design is stunning. Our users love the new experience.”</blockquote>
+                        <div class="author">
+                            <div class="avatar">ER</div>
+                            <div>
+                                <div class="name">Emma R.</div>
+                                <div class="role">Product, DesignLab</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Duplicate for seamless loop -->
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <blockquote>“WebYow transformed our legacy system into a modern, scalable platform. The team is
+                            exceptional.”</blockquote>
+                        <div class="author">
+                            <div class="avatar">JD</div>
+                            <div>
+                                <div class="name">John D.</div>
+                                <div class="role">CTO, FinTech Inc.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <blockquote>“The mobile app they built for us boosted engagement by 200%. A true game-changer.”
+                        </blockquote>
+                        <div class="author">
+                            <div class="avatar">SM</div>
+                            <div>
+                                <div class="name">Sarah M.</div>
+                                <div class="role">CEO, HealthWise</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CTA SECTION
+    ============================================================ -->
+    <section class="cta-section" aria-label="Call to action">
+        <div class="cta-bg"></div>
+        <div class="cta-content container">
+            <h2 class="section-title reveal">Let's Build Something <span class="highlight">Extraordinary</span>
+                Together.</h2>
+            <p class="section-desc mx-auto reveal reveal-delay-1">
+                Ready to turn your vision into reality? Let's talk.
             </p>
-            <p class="mb-4">
-                From complete <strong>payment management software, ERP solutions, resort booking platforms,
-                    e-commerce</strong> to our upcoming <strong>YowShare (file sharing), Crave dish (food platform), and
-                    Yow CRM</strong> — we merge creativity, engineering, and execution. No shortcuts, just excellence.
-            </p>
-            <p>
-                🇮🇳 Govt Registered | Building the future, both for partners and ourselves.
-            </p><br>
-            <a href="about"
-                class="bg-gradient-to-r from-blue-500 to-cyan-400 text-white px-8 py-3 rounded-full text-lg font-bold hover:scale-105 transition transform duration-300 scroll-effect">About
-                Us</a>
-        </div>
-        <!-- Floating toys -->
-        <div class="absolute top-10 left-10 w-16 h-16 animate-bounce">
-            <img src="https://cdn-icons-png.flaticon.com/512/3275/3275967.png" alt="Toy 1" />
-        </div>
-        <div class="absolute bottom-10 right-10 w-20 h-20 animate-spin-slow">
-            <img src="https://cdn-icons-png.flaticon.com/512/1034/1034128.png" alt="Toy 2" />
-        </div>
-    </section>
-
-    <!-- Projects Section: Client Projects + Own Upcoming Products -->
-    <section id="projects" class="section px-6 bg-blue-50 text-center">
-        <h2 class="text-4xl font-bold mb-4 neon-text scroll-effect">Our Impact: Client & In-House</h2>
-        <p class="text-lg text-gray-700 mb-10 max-w-3xl mx-auto scroll-effect">
-            We deliver world-class digital solutions for clients across industries, while building our own product
-            suite. Explore our delivered client projects and upcoming own innovations.
-        </p>
-
-        <!-- Client Projects Grid (4 projects: VRK Agency, Tingo ERP, Naga Resort, Mototuf) -->
-        <div class="mb-16">
-            <h3
-                class="text-3xl font-bold text-gray-800 mb-8 relative inline-block after:content-[''] after:absolute after:w-2/3 after:h-1 after:bg-gradient-to-r after:from-cyan-400 after:to-blue-500 after:bottom-[-8px] after:left-1/2 after:transform after:-translate-x-1/2">
-                🏆 Client Success Stories</h3>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
-                <!-- VRK Agency - Payment Management -->
-                <div class="glass p-5 scroll-effect rounded-2xl shadow-md">
-                    <img src="https://cdn-icons-png.flaticon.com/512/2830/2830312.png" class="w-20 mx-auto mb-4"
-                        alt="Payment Management">
-                    <h3 class="text-xl font-semibold mb-2">VRK Agency</h3>
-                    <p class="text-gray-700 text-sm">Payment management software for agencies — automated invoicing,
-                        reconciliation, and multi-party settlements.</p>
-                </div>
-                <!-- Tingo Soft drinks ERP -->
-                <div class="glass p-5 scroll-effect rounded-2xl shadow-md">
-                    <img src="https://cdn-icons-png.flaticon.com/512/1048/1048933.png" class="w-20 mx-auto mb-4"
-                        alt="ERP Software">
-                    <h3 class="text-xl font-semibold mb-2">Tingo Soft Drinks ERP</h3>
-                    <p class="text-gray-700 text-sm">Complete ERP software for beverage manufacturing — inventory,
-                        distribution, procurement, and real-time analytics.</p>
-                </div>
-                <!-- Naga Resort Website for booking -->
-                <div class="glass p-5 scroll-effect rounded-2xl shadow-md">
-                    <img src="assets/logos/nagaresort-logo.png" class="w-20 mx-auto mb-4"
-                        alt="Resort Booking">
-                    <h3 class="text-xl font-semibold mb-2">Naga Resort</h3>
-                    <p class="text-gray-700 text-sm">Modern booking website for luxury resort — real-time availability,
-                        payments, and seamless guest experience.</p>
-                </div>
-                <!-- Mototuf bike accessories e-commerce -->
-                <div class="glass p-5 scroll-effect rounded-2xl shadow-md">
-                    <img  style="width: 140px;" src="assets/logos/mototuf-logo.png" class="w-20 mx-auto mb-4"
-                        alt="E-commerce">
-                    <h3 class="text-xl font-semibold mb-2">Mototuf</h3>
-                    <p class="text-gray-700 text-sm">Bike accessories e‑commerce platform — catalog, cart, secure
-                        checkout, and rider community features.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Own Upcoming Products Grid (3 projects: YowShare, Crave dish, Yow CRM) -->
-        <div>
-            <h3
-                class="text-3xl font-bold text-gray-800 mb-8 relative inline-block after:content-[''] after:absolute after:w-2/3 after:h-1 after:bg-gradient-to-r after:from-cyan-400 after:to-blue-500 after:bottom-[-8px] after:left-1/2 after:transform after:-translate-x-1/2">
-                ✨ Our Own Products (Launching Soon)</h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
-                <!-- YowShare - file sharing application -->
-                <div class="glass p-5 scroll-effect rounded-2xl shadow-md">
-                    <img src="https://cdn-icons-png.flaticon.com/512/1048/1048945.png" class="w-20 mx-auto mb-4"
-                        alt="YowShare">
-                    <h3 class="text-xl font-semibold mb-2">YowShare</h3>
-                    <p class="text-gray-700 text-sm">Next‑gen file sharing application — secure, lightning fast, with
-                        end‑to‑end encryption and real-time sync.</p>
-                </div>
-                <!-- Crave dish - food based website -->
-                <div class="glass p-5 scroll-effect rounded-2xl shadow-md">
-                    <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" class="w-20 mx-auto mb-4"
-                        alt="Crave dish">
-                    <h3 class="text-xl font-semibold mb-2">Crave dish  </h3>
-                    <p class="text-gray-700 text-sm">Smart food discovery and ordering platform — curated restaurants,
-                        AI recommendations, and delightful UX.</p>
-                </div>
-                <!-- Yow CRM - business management -->
-                <div class="glass p-5 scroll-effect rounded-2xl shadow-md">
-                    <img src="https://cdn-icons-png.flaticon.com/512/1048/1048983.png" class="w-20 mx-auto mb-4"
-                        alt="Yow CRM">
-                    <h3 class="text-xl font-semibold mb-2">Yow CRM</h3>
-                    <p class="text-gray-700 text-sm">All‑in‑one CRM to manage leads, sales, support, and business ops —
-                        no‑code customization, built for scale.</p>
-                </div>
+            <div class="cta-btns reveal reveal-delay-2">
+                <a href="#contact" class="btn btn-primary btn-lg">
+                    Contact Us <i class="fas fa-arrow-right icon-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-secondary btn-lg">
+                    Get Started <i class="fas fa-chevron-right icon-right"></i>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section (updated subtle content but same style) -->
-    <section id="testimonials" class="section bg-white text-center px-6 relative overflow-hidden">
-        <h2 class="text-4xl font-bold mb-12 neon-text scroll-effect">Voices That Matter</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
-            <div class="glass p-6 scroll-effect animate__animated animate__fadeInLeft animate__delay-1s">
-                <img src="https://cdn-icons-png.flaticon.com/512/2922/2922506.png" alt="Avatar"
-                    class="w-16 h-16 mx-auto rounded-full mb-4 shadow-lg">
-                <p class="italic text-gray-700 mb-2">"Webyow delivered our resort booking system and ERP — professional,
-                    on time, and truly innovative. A govt registered partner you can trust."</p>
-                <h4 class="font-bold text-lg">Rohan Mehta</h4>
-                <p class="text-sm text-gray-500">Director, Naga Resorts</p>
+    <!-- ============================================================
+    CONTACT SECTION
+    ============================================================ -->
+    <section class="section" id="contact" aria-label="Contact">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title reveal">Let's <span class="highlight">Connect</span></h2>
             </div>
-            <div class="glass p-6 scroll-effect animate__animated animate__fadeInRight animate__delay-1s">
-                <img src="https://cdn-icons-png.flaticon.com/512/2922/2922510.png" alt="Avatar"
-                    class="w-16 h-16 mx-auto rounded-full mb-4 shadow-lg">
-                <p class="italic text-gray-700 mb-2">"From e‑commerce (Mototuf) to custom software, Webyow’s engineering
-                    and design sense is premium. Excited for their own products like Yow CRM!"</p>
-                <h4 class="font-bold text-lg">Sneha K.</h4>
-                <p class="text-sm text-gray-500">Founder, Mototuf</p>
+
+            <div class="contact-wrap" style="margin-top:48px;">
+                <div class="contact-info">
+                    <h3 class="reveal">We'd love to hear from you</h3>
+                    <p class="reveal reveal-delay-1">
+                        Reach out and let's discuss how we can bring your ideas to life.
+                    </p>
+
+                    <div class="contact-item reveal reveal-delay-2">
+                        <span class="ci-icon"><i class="fas fa-envelope"></i></span>
+                        <div class="ci-text"><strong>Email</strong> info@webyow.com</div>
+                    </div>
+                    <div class="contact-item reveal reveal-delay-3">
+                        <span class="ci-icon"><i class="fas fa-phone-alt"></i></span>
+                        <div class="ci-text"><strong>Phone</strong> +91 95006 67884</div>
+                    </div>
+                    <div class="contact-item reveal reveal-delay-4">
+                        <span class="ci-icon"><i class="fas fa-map-marker-alt"></i></span>
+                        <div class="ci-text"><strong>Location</strong>Bangalore, Karnataka, India</div>
+                    </div>
+
+                    <div class="social-links reveal reveal-delay-5">
+                        <a href="https://www.linkedin.com/company/webyow/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/9500667884" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://github.com/webyow" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.youtube.com/channel/UCk8v5X5X5X5X5X5X5X5X5X5" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/webyow/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm" novalidate>
+                    <div class="form-group reveal reveal-delay-1">
+                        <span class="form-icon"><i class="fas fa-user"></i></span>
+                        <input type="text" placeholder="Full Name" required aria-label="Full name" />
+                    </div>
+                    <div class="form-group reveal reveal-delay-2">
+                        <span class="form-icon"><i class="fas fa-envelope"></i></span>
+                        <input type="email" placeholder="Email Address" required aria-label="Email address" />
+                    </div>
+                    <div class="form-group reveal reveal-delay-3">
+                        <span class="form-icon"><i class="fas fa-building"></i></span>
+                        <input type="text" placeholder="Company (optional)" aria-label="Company name" />
+                    </div>
+                    <div class="form-group reveal reveal-delay-4">
+                        <textarea placeholder="Tell us about your project..." required
+                            aria-label="Project details"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg reveal reveal-delay-5">
+                        Send Message <i class="fas fa-paper-plane icon-right"></i>
+                    </button>
+                </form>
             </div>
         </div>
-        <div class="absolute top-0 left-0 w-full h-full pointer-events-none z-0 animate__animated animate__fadeIn">
-            <img src="https://www.transparenttextures.com/patterns/stardust.png"
-                class="w-full h-full object-cover opacity-10" alt="Stars Texture">
-        </div>
     </section>
 
-    <!-- Careers Section -->
-    <section id="careers" class="section px-6 text-center bg-blue-100 relative">
-        <h2 class="text-4xl font-bold mb-6 neon-text scroll-effect">Join Our Crew</h2>
-        <p class="text-gray-700 text-lg max-w-2xl mx-auto mb-8 scroll-effect">Webyow is a creative playground for
-            engineers, designers, and dreamers. Work on client projects that matter and build in-house products used by
-            thousands. Govt registered, full creative freedom.</p>
-        <a href="careers"
-            class="bg-gradient-to-r from-blue-500 to-cyan-400 text-white px-8 py-3 rounded-full text-lg font-bold hover:scale-105 transition transform duration-300 scroll-effect">Careers</a>
-        <div class="absolute -top-10 -right-10 w-48 h-48 bg-blue-300 rounded-full opacity-20 blur-2xl animate-pulse">
-        </div>
-    </section>
+    <!-- ============================================================
+    FOOTER
+    ============================================================ -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">
+                        <span class="logo-icon"><img width="30px" src="assets/logos/bg-logo-w.svg"
+                                alt="WebYow Logo"></span>
+                        <span>WebYow</span>
+                    </a>
+                    <p>We Build Your World — transforming ideas into extraordinary digital experiences that empower
+                        businesses to thrive.</p>
+                </div>
+                <div class="footer-col">
+                    <h5>Company</h5>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#products">Products</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#">Careers</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Solutions</h5>
+                    <a href="#services">Custom Software</a>
+                    <a href="#services">Web Applications</a>
+                    <a href="#services">Mobile Apps</a>
+                    <a href="#services">ERP Solutions</a>
+                    <a href="#services">AI &amp; Automation</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Support</h5>
+                    <a href="#">Help Center</a>
+                    <a href="#">Documentation</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section px-6 text-center bg-white">
-        <h2 class="text-4xl font-bold mb-6 neon-text">Let’s Connect</h2>
-        <p class="text-gray-700 text-lg mb-4">Got an idea, client project, or want to invest in our products? We’re just
-            a click away.</p>
-
-        <div class="flex justify-center space-x-8 mt-4 flex-wrap gap-4">
-            <a href="mailto:info@webyow.com" class="text-blue-600 hover:text-blue-800 text-xl font-semibold">
-                📧 Email Us
-            </a>
-            <a href="https://wa.me/919500667884" target="_blank"
-                class="text-green-600 hover:text-green-800 text-xl font-semibold">
-                💬 WhatsApp
-            </a>
-            <a href="https://www.linkedin.com/company/webyow/"
-                class="text-blue-600 hover:text-blue-800 text-xl font-semibold flex items-center space-x-2"
-                target="_blank" rel="noopener noreferrer">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
-                    width="24" />
-                <span>LinkedIn</span>
-            </a>
-            <a href="contact" class="text-gray-600 hover:text-gray-800 text-xl font-semibold">
-                📞 Call Us
-            </a>
-        </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer class="bg-gray-100 text-center py-6 border-t border-gray-200 text-gray-600 relative">
-        <p class="text-lg font-semibold">© 2025 WebYow — Govt Registered Digital Software Company | All Rights Reserved
-        </p>
-        <div class="absolute top-0 left-0 w-full h-full pointer-events-none">
-            <img src="https://www.transparenttextures.com/patterns/asfalt-dark.png" class="w-full h-full opacity-5"
-                alt="">
+            <div class="footer-bottom">
+                <span>&copy; 2025 <span class="highlight">WebYow</span> — We Build Your World</span>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/company/webyow/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/9500667884" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://github.com/webyow" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.youtube.com/channel/UCk8v5X5X5X5X5X5X5X5X5X5" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/webyow/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
         </div>
     </footer>
 
-    <!-- Bubble JS (unchanged) -->
+    <!-- ============================================================
+    JAVASCRIPT
+    ============================================================ -->
     <script>
-        const container = document.getElementById('bubbles-container');
-        const totalBubbles = 50;
+        (function () {
+            'use strict';
 
-        for (let i = 0; i < totalBubbles; i++) {
-            const bubble = document.createElement('div');
-            bubble.className = 'bubble';
-            const size = Math.random() * 60 + 40;
-            bubble.style.width = `${size}px`;
-            bubble.style.height = `${size}px`;
-            bubble.style.left = `${Math.random() * 100}%`;
-            bubble.style.top = `${Math.random() * 100}%`;
-            bubble.style.animationDelay = `${Math.random() * 10}s`;
-            bubble.style.animationDuration = `${30 + Math.random() * 20}s`;
-            container.appendChild(bubble);
-        }
-    </script>
+            // ============================================================
+            // THEME TOGGLE — using bottom bar only
+            // ============================================================
+            const html = document.documentElement;
+            const themeToggleBtn = document.getElementById('themeToggleBottom');
+            const themeIcon = document.getElementById('themeIconBottom');
+            const themeLabel = document.getElementById('themeLabelBottom');
+            const themeDot = document.getElementById('themeDotBottom');
 
-    <script>
-        // Intersection Observer for scroll effects
-        const scrollElements = document.querySelectorAll('.scroll-effect');
-        const observerOptions = {
-            root: null,
-            threshold: 0.1
-        };
-
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target);
+            function setTheme(dark) {
+                if (dark) {
+                    html.setAttribute('data-theme', 'dark');
+                    themeIcon.className = 'fas fa-sun';
+                    themeLabel.textContent = '';
+                    themeDot.style.transform = 'translateX(18px)';
+                    localStorage.setItem('theme', 'dark');
+                } else {
+                    html.removeAttribute('data-theme');
+                    themeIcon.className = 'fas fa-moon';
+                    themeLabel.textContent = '';
+                    themeDot.style.transform = 'translateX(0)';
+                    localStorage.setItem('theme', '');
                 }
+            }
+
+            // Load saved theme
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                setTheme(true);
+            } else if (savedTheme === '') {
+                setTheme(false);
+            } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                setTheme(true);
+            } else {
+                setTheme(false);
+            }
+
+            themeToggleBtn.addEventListener('click', function (e) {
+                e.stopPropagation();
+                const isDark = html.getAttribute('data-theme') === 'dark';
+                setTheme(!isDark);
             });
-        }, observerOptions);
 
-        scrollElements.forEach(el => observer.observe(el));
-    </script>
-    <script>
-        // 3D Floating Effect
-        document.querySelectorAll('.floating-3d').forEach(el => {
-            el.addEventListener('mousemove', (e) => {
-                const rect = el.getBoundingClientRect();
-                const x = (e.clientX - rect.left) / rect.width;
-                const y = (e.clientY - rect.top) / rect.height;
-                el.style.transform = `rotateX(${(y - 0.5) * 20}deg) rotateY(${(x - 0.5) * 20}deg)`;
+            // ============================================================
+            // NAVBAR SCROLL
+            // ============================================================
+            const navbar = document.getElementById('navbar');
+            let lastScrollY = 0;
+
+            window.addEventListener('scroll', function () {
+                const y = window.scrollY;
+                if (y > 40) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+                lastScrollY = y;
+            }, { passive: true });
+
+            // ============================================================
+            // HAMBURGER MENU
+            // ============================================================
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('navLinks');
+
+            hamburger.addEventListener('click', function () {
+                const isOpen = navLinks.classList.toggle('open');
+                hamburger.classList.toggle('active');
+                hamburger.setAttribute('aria-expanded', isOpen);
+                document.body.style.overflow = isOpen ? 'hidden' : '';
             });
-            el.addEventListener('mouseleave', () => {
-                el.style.transform = 'rotateX(0deg) rotateY(0deg)';
+
+            navLinks.querySelectorAll('a').forEach(function (link) {
+                link.addEventListener('click', function () {
+                    navLinks.classList.remove('open');
+                    hamburger.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                    document.body.style.overflow = '';
+                });
             });
-        });
-    </script>
 
-    <script>
-        // Particle Background Effect (unchanged)
-        const canvas = document.createElement('canvas');
-        canvas.className = 'absolute inset-0 z-0';
-        document.body.appendChild(canvas);
-        const ctx = canvas.getContext('2d');
+            // ============================================================
+            // PARTICLES
+            // ============================================================
+            const canvas = document.getElementById('particles-canvas');
+            const ctx = canvas.getContext('2d');
+            let particles = [];
+            let w, h;
 
-        let particles = [];
-        const particleCount = 100;
+            function resizeCanvas() {
+                const rect = canvas.parentElement.getBoundingClientRect();
+                canvas.width = rect.width;
+                canvas.height = rect.height;
+                w = canvas.width;
+                h = canvas.height;
+            }
 
-        function resizeCanvas() {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-        }
+            resizeCanvas();
+            window.addEventListener('resize', resizeCanvas);
 
-        function createParticles() {
-            for (let i = 0; i < particleCount; i++) {
-                particles.push({
-                    x: Math.random() * canvas.width,
-                    y: Math.random() * canvas.height,
-                    radius: Math.random() * 3 + 1,
-                    color: `rgba(255, 255, 255, ${Math.random()})`
+            class Particle {
+                constructor() {
+                    this.reset();
+                }
+                reset() {
+                    this.x = Math.random() * w;
+                    this.y = Math.random() * h;
+                    this.size = Math.random() * 2.8 + 0.8;
+                    this.speedX = (Math.random() - 0.5) * 0.5;
+                    this.speedY = (Math.random() - 0.5) * 0.5;
+                    this.opacity = Math.random() * 0.5 + 0.12;
+                }
+                update() {
+                    this.x += this.speedX;
+                    this.y += this.speedY;
+                    if (this.x < 0 || this.x > w || this.y < 0 || this.y > h) {
+                        this.reset();
+                    }
+                }
+                draw() {
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                    ctx.fillStyle = 'rgba(37, 99, 235, ' + this.opacity + ')';
+                    ctx.fill();
+                }
+            }
+
+            const count = Math.min(80, Math.floor((w * h) / 14000));
+            for (let i = 0; i < count; i++) {
+                particles.push(new Particle());
+            }
+
+            function drawParticles() {
+                ctx.clearRect(0, 0, w, h);
+
+                particles.forEach(function (p) {
+                    p.update();
+                    p.draw();
+                });
+
+                // Connections
+                for (let i = 0; i < particles.length; i++) {
+                    for (let j = i + 1; j < particles.length; j++) {
+                        const dx = particles[i].x - particles[j].x;
+                        const dy = particles[i].y - particles[j].y;
+                        const dist = Math.sqrt(dx * dx + dy * dy);
+                        if (dist < 130) {
+                            ctx.beginPath();
+                            ctx.moveTo(particles[i].x, particles[i].y);
+                            ctx.lineTo(particles[j].x, particles[j].y);
+                            const alpha = 0.07 * (1 - dist / 130);
+                            ctx.strokeStyle = 'rgba(37, 99, 235, ' + alpha + ')';
+                            ctx.lineWidth = 0.8;
+                            ctx.stroke();
+                        }
+                    }
+                }
+
+                requestAnimationFrame(drawParticles);
+            }
+
+            drawParticles();
+
+            // ============================================================
+            // HERO PARALLAX
+            // ============================================================
+            const heroContent = document.querySelector('[data-parallax]');
+
+            heroContent.addEventListener('mousemove', function (e) {
+                const rect = this.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width - 0.5;
+                const y = (e.clientY - rect.top) / rect.height - 0.5;
+                this.style.transform = 'perspective(900px) rotateY(' + (x * 2.5) + 'deg) rotateX(' + (-y * 2.5) +
+                    'deg)';
+                this.style.transition = 'transform 0.05s ease';
+            });
+
+            heroContent.addEventListener('mouseleave', function () {
+                this.style.transform = 'perspective(900px) rotateY(0deg) rotateX(0deg)';
+                this.style.transition = 'transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+                setTimeout(function () {
+                    this.style.transition = '';
+                }.bind(this), 800);
+            });
+
+            // ============================================================
+            // SCROLL REVEAL — Intersection Observer
+            // ============================================================
+            const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+
+            const revealObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.12,
+                rootMargin: '0px 0px -30px 0px'
+            });
+
+            revealElements.forEach(function (el) {
+                revealObserver.observe(el);
+            });
+
+            // ============================================================
+            // COUNTER ANIMATION
+            // ============================================================
+            const counters = document.querySelectorAll('[data-count]');
+
+            const counterObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        const el = entry.target;
+                        const target = parseInt(el.getAttribute('data-count'), 10);
+                        let current = 0;
+                        const duration = 2000;
+                        const startTime = performance.now();
+
+                        function animateCounter(time) {
+                            const progress = Math.min((time - startTime) / duration, 1);
+                            const eased = 1 - Math.pow(1 - progress, 3);
+                            current = Math.round(eased * target);
+                            el.textContent = current + (target > 1 ? '+' : '');
+                            if (progress < 1) {
+                                requestAnimationFrame(animateCounter);
+                            } else {
+                                el.textContent = target + (target > 1 ? '+' : '');
+                            }
+                        }
+
+                        requestAnimationFrame(animateCounter);
+                        counterObserver.unobserve(el);
+                    }
+                });
+            }, { threshold: 0.4 });
+
+            counters.forEach(function (el) {
+                counterObserver.observe(el);
+            });
+
+            // Also observe stat numbers that might be in stats section
+            document.querySelectorAll('.stat-number[data-count]').forEach(function (el) {
+                counterObserver.observe(el);
+            });
+
+            // ============================================================
+            // CONTACT FORM
+            // ============================================================
+            const contactForm = document.getElementById('contactForm');
+
+            contactForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+                const btn = this.querySelector('button[type="submit"]');
+                const originalHTML = btn.innerHTML;
+                btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                btn.disabled = true;
+
+                setTimeout(function () {
+                    btn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+                    btn.style.background = '#22c55e';
+                    btn.style.boxShadow = '0 8px 32px rgba(34, 197, 94, 0.30)';
+
+                    setTimeout(function () {
+                        btn.innerHTML = originalHTML;
+                        btn.style.background = '';
+                        btn.style.boxShadow = '';
+                        btn.disabled = false;
+                        contactForm.reset();
+                    }, 2800);
+                }, 1800);
+            });
+
+            // ============================================================
+            // SMOOTH SCROLL for anchor links
+            // ============================================================
+            document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+                anchor.addEventListener('click', function (e) {
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    const target = document.querySelector(targetId);
+                    if (target) {
+                        e.preventDefault();
+                        const offset = 80;
+                        const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                        window.scrollTo({ top: top, behavior: 'smooth' });
+                    }
+                });
+            });
+
+            // ============================================================
+            // SCROLL INDICATOR click
+            // ============================================================
+            const scrollIndicator = document.querySelector('.scroll-indicator');
+            if (scrollIndicator) {
+                scrollIndicator.addEventListener('click', function () {
+                    const aboutSection = document.getElementById('about');
+                    if (aboutSection) {
+                        const offset = 80;
+                        const top = aboutSection.getBoundingClientRect().top + window.pageYOffset - offset;
+                        window.scrollTo({ top: top, behavior: 'smooth' });
+                    }
                 });
             }
-        }
 
-        function drawParticles() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            particles.forEach(p => {
-                ctx.beginPath();
-                ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-                ctx.fillStyle = p.color;
-                ctx.fill();
-            });
-        }
+            // ============================================================
+            // CONSOLE BRANDING
+            // ============================================================
+            console.log('%c🚀 WebYow — We Build Your World', 'font-size:24px; font-weight:800; color:#2563EB;');
+            console.log('%cPremium Software Development & Technology Solutions', 'font-size:14px; color:#777;');
 
-        function animateParticles() {
-            drawParticles();
-            requestAnimationFrame(animateParticles);
-        }
+            console.log('✨ Built with ❤️ by WebYow team');
+            console.log('📧 info@webyow.com');
 
-        window.addEventListener('resize', () => {
-            resizeCanvas();
-            particles = [];
-            createParticles();
-        });
-
-        resizeCanvas();
-        createParticles();
-        animateParticles();
+        })();
     </script>
-    <script>
-        // Interactive Mouse Effects (light parallax on floating elements, preserved)
-        document.addEventListener('mousemove', (e) => {
-            const x = e.clientX;
-            const y = e.clientY;
-            document.querySelectorAll('.floating-3d').forEach(el => {
-                el.style.transform = `translate(${x * 0.01}px, ${y * 0.01}px)`;
-            });
-        });
-        document.addEventListener('mouseleave', () => {
-            document.querySelectorAll('.floating-3d').forEach(el => {
-                el.style.transform = 'translate(0, 0)';
-            });
-        });
-    </script>
+
 </body>
 
 </html>

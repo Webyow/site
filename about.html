@@ -2,120 +2,225 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - WebYow | Govt Registered Digital Software Company</title>
-
-    <!-- Meta Description -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About — WebYow | We Build Your World</title>
     <meta name="description"
-        content="WebYow is a government-registered digital software company building custom software, websites, AI systems, and games for clients, plus our own products like YowShare, Cravdish, and Yow CRM.">
-
-    <!-- Meta Keywords -->
-    <meta name="keywords"
-        content="About WebYow, Govt Registered Software Company, WebYow AI Solutions, Client Projects, ARK Agency, Tingo ERP, Naga Resort, Mototuf, YowShare, Cravdish, Yow CRM, WebYow Products">
-
-    <!-- Author -->
-    <meta name="author" content="WebYow Team">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:title" content="About WebYow - Govt Registered Digital Innovation">
-    <meta property="og:description"
-        content="Discover WebYow
-        
-        's journey — delivering elite software for clients and crafting our own breakthrough products. Govt registered, future-ready.">
-    <meta property="og:image"
-        content="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=1200&q=80">
-    <meta property="og:url" content="https://www.webyow.com/about">
-    <meta property="og:type" content="website">
-
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://www.webyow.com/about">
-
-    <!-- Fonts and Styles -->
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="webyow-logo.png">
-
+        content="Learn about WebYow — our mission, values, and the team behind premium software development." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/webyow-logo.png" />
+    <link rel="stylesheet" href="style.css" />
     <style>
-        body {
-            font-family: 'Outfit', sans-serif;
-            background: linear-gradient(135deg, #ffffff, #e6f7ff);
-            overflow-x: hidden;
+        /* ===== ABOUT PAGE SPECIFIC STYLES ===== */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 32px;
+            margin-top: 48px;
         }
 
-        .glass {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(10px);
-            border-radius: 1.5rem;
-            border: 1px solid rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease-in-out;
+        .team-card {
+            background: var(--bg-card);
+            backdrop-filter: blur(12px);
+            border-radius: var(--radius-lg);
+            padding: 32px 24px;
+            border: 1px solid var(--border-light);
+            text-align: center;
+            transition: all 0.4s ease;
         }
 
-        .glass:hover {
-            transform: translateY(-5px) scale(1.02);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        .team-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+            border-color: rgba(37, 99, 235, 0.15);
         }
 
-        .neon-text {
-            text-shadow: 0 0 2px #0ff, 0 0 4px #0ff, 0 0 6px #0ff;
-        }
-
-        .bubble {
-            position: absolute;
+        .team-card .avatar-lg {
+            width: 90px;
+            height: 90px;
             border-radius: 50%;
-            background: rgba(173, 216, 230, 0.3);
-            pointer-events: none;
-            animation: floatAround 40s linear infinite;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 0 auto 16px;
+            box-shadow: 0 8px 32px rgba(37, 99, 235, 0.20);
         }
 
-        @keyframes floatAround {
-            0% {
-                transform: translate(0, 0) scale(0.8);
-                opacity: 0.3;
-            }
-
-            25% {
-                transform: translate(30vw, -20vh) scale(1);
-                opacity: 0.4;
-            }
-
-            50% {
-                transform: translate(-20vw, -30vh) scale(1.2);
-                opacity: 0.3;
-            }
-
-            75% {
-                transform: translate(15vw, -50vh) scale(0.9);
-                opacity: 0.2;
-            }
-
-            100% {
-                transform: translate(-10vw, -80vh) scale(1.1);
-                opacity: 0;
-            }
+        .team-card h4 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-primary);
         }
 
-        .blob {
+        .team-card .role {
+            font-size: 0.85rem;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .team-card p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-top: 8px;
+            line-height: 1.6;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 24px;
+            margin-top: 40px;
+        }
+
+        .value-card {
+            padding: 28px 20px;
+            background: var(--bg-card);
+            backdrop-filter: blur(8px);
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-light);
+            text-align: center;
+            transition: all 0.4s ease;
+        }
+
+        .value-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--primary);
+        }
+
+        .value-card .v-icon {
+            font-size: 2.4rem;
+            color: var(--primary);
+            display: block;
+            margin-bottom: 12px;
+        }
+
+        .value-card h4 {
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--text-primary);
+        }
+
+        .value-card p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        .milestone-timeline {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px 40px;
+            margin-top: 32px;
+        }
+
+        .milestone {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 12px 24px;
+            background: var(--bg-card);
+            border-radius: 60px;
+            border: 1px solid var(--border-light);
+            transition: all 0.3s ease;
+        }
+
+        .milestone:hover {
+            transform: scale(1.03);
+            border-color: var(--primary);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .milestone .year {
+            font-weight: 800;
+            font-size: 1.1rem;
+            color: var(--primary);
+        }
+
+        .milestone .event {
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+
+        .about-hero {
+            min-height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 140px 24px 60px;
+            background: var(--bg-primary);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-hero .hero-bg {
             position: absolute;
-            width: 300px;
-            height: 300px;
-            background: linear-gradient(135deg, #00c9ff 0%, #92fe9d 100%);
-            border-radius: 50%;
-            filter: blur(100px);
-            opacity: 0.6;
-            animation: moveBlob 15s infinite alternate ease-in-out;
+            inset: 0;
+            z-index: 0;
+            background:
+                radial-gradient(ellipse at 30% 40%, rgba(37, 99, 235, 0.08) 0%, transparent 60%),
+                radial-gradient(ellipse at 70% 60%, rgba(37, 99, 235, 0.05) 0%, transparent 50%);
+            animation: heroGradient 14s ease-in-out infinite alternate;
         }
 
-        @keyframes moveBlob {
-            0% {
-                transform: translate(0, 0);
+        .about-hero .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 760px;
+        }
+
+        .about-hero .hero-title {
+            font-size: clamp(2.8rem, 8vw, 5.6rem);
+            font-weight: 900;
+            letter-spacing: -0.04em;
+            line-height: 1.05;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, var(--text-primary) 30%, var(--primary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .about-hero .hero-desc {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            max-width: 520px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .team-grid {
+                grid-template-columns: 1fr 1fr;
             }
 
-            100% {
-                transform: translate(100px, 200px);
+            .values-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .milestone-timeline {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .values-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -123,109 +228,504 @@
 
 <body>
 
-    <!-- Bubble Background -->
-    <div id="bubbles-container" class="fixed top-0 left-0 w-full h-full -z-10 overflow-hidden"></div>
+    <!-- ============================================================
+    NAVBAR
+    ============================================================ -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="nav-logo" aria-label="WebYow Home">
+            <span class="logo-icon"><img width="30px" src="assets/logos/bg-logo-w.svg" alt="WebYow" /></span>
+            <span>WebYow</span>
+        </a>
 
-    <!-- Hero -->
-    <section class="relative text-center py-20 px-6">
-        <div class="blob" style="top:-20%; left:10%;"></div>
-        <div class="blob" style="top:50%; right:10%;"></div>
-        <img src="webyow-logo.png" class="w-28 mx-auto mb-6 animate__animated animate__bounceInDown">
-        <h1 class="text-5xl font-extrabold neon-text animate__animated animate__fadeInUp">About WebYow</h1>
-        <p class="text-lg text-gray-700 max-w-2xl mx-auto mt-4 animate__animated animate__fadeInUp animate__delay-1s">
-            🇮🇳 Government-registered digital software company | Building elite solutions for clients & crafting our own breakthrough products.
-        </p>
-    </section>
+        <ul class="nav-links" id="navLinks" role="menubar">
+            <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+            <li role="none"><a href="about.html" role="menuitem" class="active">About</a></li>
+            <li role="none"><a href="services.html" role="menuitem">Services</a></li>
+            <li role="none"><a href="products.html" role="menuitem">Products</a></li>
+            <li role="none"><a href="careers.html" role="menuitem">Careers</a></li>
+            <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+            <li role="none"><a href="contact.html" class="btn-nav" role="menuitem">Get Started</a></li>
+        </ul>
 
-    <!-- Our Story (updated with client & own product focus) -->
-    <section class="py-16 bg-blue-50 text-center px-6">
-        <h2 class="text-4xl font-bold mb-10 neon-text scroll-effect">Our Story</h2>
-        <div class="max-w-4xl mx-auto glass p-8 scroll-effect">
-            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89c0e4?auto=format&fit=crop&w=1200&q=80"
-                alt="Team working together" class="rounded-xl mb-6 mx-auto w-full max-w-3xl" />
-            <p class="text-gray-700 text-lg leading-relaxed">
-                Webyow started as a crew of engineers, designers, and dreamers with a single belief: great software changes everything. Today, we are a <strong>government-registered digital company</strong> that builds custom software, websites, AI systems, and games for clients — while simultaneously developing our own products like <strong>YowShare</strong> (file sharing), <strong>Cravdish</strong> (food discovery), and <strong>Yow CRM</strong>. From payment management (ARK Agency) to ERP (Tingo Soft Drinks), resort booking (Naga Resort) to e‑commerce (Mototuf) — we deliver excellence on every front.
+        <div class="nav-actions">
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ============================================================
+    FIXED BOTTOM BAR
+    ============================================================ -->
+    <div class="bottom-bar" role="toolbar" aria-label="Quick actions">
+        <a href="https://wa.me/9500667884" target="_blank" class="bar-btn whatsapp" aria-label="Contact via WhatsApp"
+            title="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.instagram.com/webyow/" target="_blank" class="bar-btn instagram"
+            aria-label="Follow on Instagram" title="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/webyow/" target="_blank" class="bar-btn linkedin"
+            aria-label="Connect on LinkedIn" title="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/webyow" target="_blank" class="bar-btn github" aria-label="View on GitHub"
+            title="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <div class="divider"></div>
+
+        <button class="bar-btn theme-toggle-bottom" id="themeToggleBottom" aria-label="Toggle theme">
+            <span class="toggle-track">
+                <i class="fas fa-moon" id="themeIconBottom"></i>
+                <span id="themeDotBottom"></span>
+                <span id="themeLabelBottom"></span>
+            </span>
+        </button>
+    </div>
+
+    <!-- ============================================================
+    ABOUT HERO
+    ============================================================ -->
+    <section class="about-hero" id="about-hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <span class="section-label">About Us</span>
+            <h1 class="hero-title">We Build <br />Your World</h1>
+            <p class="hero-desc">
+                WebYow is a government-registered digital software company crafting
+                custom software, AI systems, websites, games, and SaaS products
+                that empower businesses to thrive.
             </p>
         </div>
     </section>
 
-    <!-- Mission & Vision (updated with govt registration and product vision) -->
-    <section class="py-16 bg-white px-6">
-        <div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
-            <div class="glass p-8 text-center scroll-effect floating-3d">
-                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1000" class="rounded-lg mb-4">
-                <h3 class="text-2xl font-semibold mb-4 neon-text">Our Mission</h3>
-                <p class="text-gray-700">
-                    To empower businesses with custom digital solutions (software, AI, games, websites) and to launch our own innovative products that solve real-world needs — with integrity and engineering excellence.
-                </p>
-            </div>
-            <div class="glass p-8 text-center scroll-effect floating-3d">
-                <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=1000" class="rounded-lg mb-4">
-                <h3 class="text-2xl font-semibold mb-4 neon-text">Our Vision</h3>
-                <p class="text-gray-700">
-                    To become India’s most trusted govt-registered digital innovation hub, recognized globally for client-centric delivery and groundbreaking in-house products.
-                </p>
+    <!-- ============================================================
+    OUR STORY
+    ============================================================ -->
+    <section class="section" id="story">
+        <div class="container">
+            <div class="about-grid" style="grid-template-columns:1fr 1fr; gap:60px; align-items:center;">
+                <div>
+                    <span class="section-label reveal">Our Story</span>
+                    <h2 class="section-title reveal">From Vision to <span class="highlight">Reality</span></h2>
+                    <p class="reveal reveal-delay-1"
+                        style="font-size:1.05rem; color:var(--text-secondary); line-height:1.9;">
+                        Founded in 2020, WebYow began with a simple belief: technology should work for people, not the
+                        other way around. What started as a small team of passionate developers has grown into a
+                        full-service digital innovation hub, delivering solutions that make a tangible difference.
+                    </p>
+                    <p class="reveal reveal-delay-2"
+                        style="font-size:1.05rem; color:var(--text-secondary); line-height:1.9; margin-top:12px;">
+                        Today, we partner with startups and enterprises alike, combining deep technical expertise with a
+                        human-centered approach to build software that truly transforms businesses.
+                    </p>
+                    <div class="milestone-timeline reveal reveal-delay-3">
+                        <div class="milestone"><span class="year">2020</span><span class="event">Founded</span></div>
+                        <div class="milestone"><span class="year">2022</span><span class="event">1st SaaS Launch</span>
+                        </div>
+                        <div class="milestone"><span class="year">2024</span><span class="event">120+ Projects</span>
+                        </div>
+                        <div class="milestone"><span class="year">2025</span><span class="event">Global Reach</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image-wrapper reveal reveal-delay-2"
+                    style="aspect-ratio:4/3; border-radius:28px; overflow:hidden; box-shadow:var(--shadow-lg);">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop&crop=center&auto=format"
+                        alt="WebYow team" loading="lazy" style="width:100%; height:100%; object-fit:cover;" />
+                    <div class="about-image-overlay"></div>
+                    <div class="floating-badge">
+                        <span class="badge-icon"><i class="fas fa-rocket"></i></span>
+                        <span class="badge-text">
+                            5+ Years
+                            <small>of innovation &amp; excellence</small>
+                        </span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Core Values (unchanged structure, subtle text updates) -->
-    <section class="py-16 bg-blue-50 px-6">
-        <h2 class="text-4xl font-bold mb-12 neon-text text-center scroll-effect">Our Core Values</h2>
-        <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            <div class="glass p-6 text-center scroll-effect">
-                <h4 class="text-xl font-bold mb-2">Innovation</h4>
-                <p class="text-gray-700">Constantly pushing boundaries for both clients and our own products.</p>
+    <!-- ============================================================
+    MISSION, VISION, VALUES
+    ============================================================ -->
+    <section class="section" style="background:var(--bg-secondary);">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-label reveal">Our Compass</span>
+                <h2 class="section-title reveal">Mission &amp; <span class="highlight">Values</span></h2>
+                <p class="section-desc mx-auto reveal reveal-delay-1">
+                    Guided by a clear purpose and a set of core principles that define everything we do.
+                </p>
             </div>
-            <div class="glass p-6 text-center scroll-effect">
-                <h4 class="text-xl font-bold mb-2">Integrity</h4>
-                <p class="text-gray-700">Government-registered, transparent, and committed to delivery.</p>
+
+            <div
+                style="display:grid; grid-template-columns:repeat(auto-fill, minmax(260px,1fr)); gap:28px; margin-top:48px;">
+                <div class="service-card reveal reveal-delay-1" style="text-align:center;">
+                    <div class="icon" style="margin:0 auto 20px;"><i class="fas fa-bullseye"></i></div>
+                    <h3>Mission</h3>
+                    <p>To empower businesses with innovative, secure, and scalable digital solutions that drive growth
+                        and create lasting value.</p>
+                </div>
+                <div class="service-card reveal reveal-delay-2" style="text-align:center;">
+                    <div class="icon" style="margin:0 auto 20px;"><i class="fas fa-eye"></i></div>
+                    <h3>Vision</h3>
+                    <p>To become the world's most trusted partner for digital transformation, known for excellence,
+                        integrity, and human-centric design.</p>
+                </div>
+                <div class="service-card reveal reveal-delay-3" style="text-align:center;">
+                    <div class="icon" style="margin:0 auto 20px;"><i class="fas fa-heart"></i></div>
+                    <h3>Values</h3>
+                    <p>Innovation · Integrity · Excellence · Collaboration · Customer-Centricity — these guide every
+                        decision we make.</p>
+                </div>
             </div>
-            <div class="glass p-6 text-center scroll-effect">
-                <h4 class="text-xl font-bold mb-2">Collaboration</h4>
-                <p class="text-gray-700">Co-creating with clients and within our crew to build magic.</p>
-            </div>
-            <div class="glass p-6 text-center scroll-effect">
-                <h4 class="text-xl font-bold mb-2">User First</h4>
-                <p class="text-gray-700">Every product — client or in-house — starts with the user’s needs.</p>
+
+            <div class="values-grid reveal reveal-delay-4">
+                <div class="value-card">
+                    <span class="v-icon">💡</span>
+                    <h4>Innovation</h4>
+                    <p>We push boundaries and embrace new ideas to create breakthrough solutions.</p>
+                </div>
+                <div class="value-card">
+                    <span class="v-icon">🤝</span>
+                    <h4>Integrity</h4>
+                    <p>We act with honesty, transparency, and accountability in everything we do.</p>
+                </div>
+                <div class="value-card">
+                    <span class="v-icon">🌟</span>
+                    <h4>Excellence</h4>
+                    <p>We strive for the highest quality in every line of code and every interaction.</p>
+                </div>
+                <div class="value-card">
+                    <span class="v-icon">🤲</span>
+                    <h4>Collaboration</h4>
+                    <p>We succeed together — with our clients, partners, and each other.</p>
+                </div>
+                <div class="value-card">
+                    <span class="v-icon">❤️</span>
+                    <h4>Customer-Centric</h4>
+                    <p>Our clients' success is our success. We listen, adapt, and deliver.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-100 text-center py-6 border-t border-gray-200 text-gray-600">
-        <p class="text-lg font-semibold">© 2025 WebYow — Govt Registered Digital Software Company | All Rights Reserved</p>
+    <!-- ============================================================
+    TEAM
+    ============================================================ -->
+    <section class="section" id="team">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-label reveal">Meet the Team</span>
+                <h2 class="section-title reveal">The People Behind <span class="highlight">WebYow</span></h2>
+                <p class="section-desc mx-auto reveal reveal-delay-1">
+                    A diverse group of designers, engineers, and dreamers united by a passion for building exceptional
+                    digital experiences.
+                </p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-card reveal reveal-delay-1">
+                    <div class="avatar-lg">AK</div>
+                    <h4>Aditya Kumar</h4>
+                    <div class="role">Founder &amp; CEO</div>
+                    <p>Visionary leader with 12+ years of experience in software architecture and product strategy.</p>
+                </div>
+                <div class="team-card reveal reveal-delay-2">
+                    <div class="avatar-lg">SR</div>
+                    <h4>Shreya Rao</h4>
+                    <div class="role">Head of Engineering</div>
+                    <p>Full-stack expert and AI enthusiast who leads our technical team with precision and care.</p>
+                </div>
+                <div class="team-card reveal reveal-delay-3">
+                    <div class="avatar-lg">PM</div>
+                    <h4>Priya Mehta</h4>
+                    <div class="role">Product Design Lead</div>
+                    <p>Design thinker who crafts intuitive, human-centered interfaces that users love.</p>
+                </div>
+                <div class="team-card reveal reveal-delay-4">
+                    <div class="avatar-lg">RV</div>
+                    <h4>Rahul Verma</h4>
+                    <div class="role">Cloud &amp; DevOps</div>
+                    <p>Infrastructure specialist ensuring our solutions are secure, scalable, and always available.</p>
+                </div>
+                <div class="team-card reveal reveal-delay-5">
+                    <div class="avatar-lg">SN</div>
+                    <h4>Sneha Nair</h4>
+                    <div class="role">AI &amp; ML Lead</div>
+                    <p>Data scientist and researcher building intelligent automation and predictive models.</p>
+                </div>
+                <div class="team-card reveal reveal-delay-6">
+                    <div class="avatar-lg">AS</div>
+                    <h4>Amit Singh</h4>
+                    <div class="role">Project Manager</div>
+                    <p>Agile expert who ensures every project is delivered on time, on budget, and beyond expectations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    STATISTICS
+    ============================================================ -->
+    <section class="section" style="background:var(--bg-secondary);">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-label reveal">By the Numbers</span>
+                <h2 class="section-title reveal">Our <span class="highlight">Impact</span></h2>
+            </div>
+            <div class="stats-grid" style="margin-top:40px;">
+                <div class="stat-item reveal reveal-delay-1">
+                    <span class="stat-number" data-count="120">0</span>
+                    <span class="stat-label">Projects Delivered</span>
+                </div>
+                <div class="stat-item reveal reveal-delay-2">
+                    <span class="stat-number" data-count="60">0</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+                <div class="stat-item reveal reveal-delay-3">
+                    <span class="stat-number" data-count="8">0</span>
+                    <span class="stat-label">Products Launched</span>
+                </div>
+                <div class="stat-item reveal reveal-delay-4">
+                    <span class="stat-number" data-count="100">0</span>
+                    <span class="stat-label">% Client Satisfaction</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CTA SECTION
+    ============================================================ -->
+    <section class="cta-section" aria-label="Call to action">
+        <div class="cta-bg"></div>
+        <div class="cta-content container">
+            <h2 class="section-title reveal">Let's Build Something <span class="highlight">Extraordinary</span>
+                Together.</h2>
+            <p class="section-desc mx-auto reveal reveal-delay-1">
+                Ready to turn your vision into reality? Let's talk.
+            </p>
+            <div class="cta-btns reveal reveal-delay-2">
+                <a href="contact.html" class="btn btn-primary btn-lg">
+                    Contact Us <i class="fas fa-arrow-right icon-right"></i>
+                </a>
+                <a href="services.html" class="btn btn-secondary btn-lg">
+                    Explore Services <i class="fas fa-chevron-right icon-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    FOOTER
+    ============================================================ -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">
+                        <span class="logo-icon"><img width="30px" src="assets/logos/bg-logo-w.svg"
+                                alt="WebYow" /></span>
+                        <span>WebYow</span>
+                    </a>
+                    <p>We Build Your World — transforming ideas into extraordinary digital experiences that empower
+                        businesses to thrive.</p>
+                </div>
+                <div class="footer-col">
+                    <h5>Company</h5>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="products.html">Products</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="careers.html">Careers</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Solutions</h5>
+                    <a href="services.html">Custom Software</a>
+                    <a href="services.html">Web Applications</a>
+                    <a href="services.html">Mobile Apps</a>
+                    <a href="services.html">ERP Solutions</a>
+                    <a href="services.html">AI &amp; Automation</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Support</h5>
+                    <a href="#">Help Center</a>
+                    <a href="#">Documentation</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>&copy; 2025 <span class="highlight">WebYow</span> — We Build Your World</span>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/company/webyow/" target="_blank" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/9500667884" target="_blank" aria-label="WhatsApp"><i
+                            class="fab fa-whatsapp"></i></a>
+                    <a href="https://github.com/webyow" target="_blank" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://www.youtube.com/@webyow-1" target="_blank" aria-label="YouTube"><i
+                            class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/webyow/" target="_blank" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
 
-    <!-- Bubbles JS -->
+    <!-- ============================================================
+    JAVASCRIPT
+    ============================================================ -->
     <script>
-        const container = document.getElementById('bubbles-container');
-        const totalBubbles = 50;
-        for (let i = 0; i < totalBubbles; i++) {
-            const bubble = document.createElement('div');
-            bubble.className = 'bubble';
-            const size = Math.random() * 60 + 40;
-            bubble.style.width = `${size}px`;
-            bubble.style.height = `${size}px`;
-            bubble.style.left = `${Math.random() * 100}%`;
-            bubble.style.top = `${Math.random() * 100}%`;
-            bubble.style.animationDelay = `${Math.random() * 10}s`;
-            bubble.style.animationDuration = `${30 + Math.random() * 20}s`;
-            container.appendChild(bubble);
-        }
-    </script>
+        (function () {
+            'use strict';
 
-    <!-- Scroll Animation -->
-    <script>
-        const scrollElements = document.querySelectorAll('.scroll-effect');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+            // ===== THEME TOGGLE =====
+            const html = document.documentElement;
+            const themeToggleBtn = document.getElementById('themeToggleBottom');
+            const themeIcon = document.getElementById('themeIconBottom');
+            const themeLabel = document.getElementById('themeLabelBottom');
+            const themeDot = document.getElementById('themeDotBottom');
+
+            function setTheme(dark) {
+                if (dark) {
+                    html.setAttribute('data-theme', 'dark');
+                    themeIcon.className = 'fas fa-sun';
+                    themeLabel.textContent = '';
+                    themeDot.style.transform = 'translateX(18px)';
+                    localStorage.setItem('theme', 'dark');
+                } else {
+                    html.removeAttribute('data-theme');
+                    themeIcon.className = 'fas fa-moon';
+                    themeLabel.textContent = '';
+                    themeDot.style.transform = 'translateX(0)';
+                    localStorage.setItem('theme', '');
                 }
+            }
+
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                setTheme(true);
+            } else if (savedTheme === '') {
+                setTheme(false);
+            } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                setTheme(true);
+            } else {
+                setTheme(false);
+            }
+
+            themeToggleBtn.addEventListener('click', function (e) {
+                e.stopPropagation();
+                const isDark = html.getAttribute('data-theme') === 'dark';
+                setTheme(!isDark);
             });
-        }, { threshold: 0.1 });
-        scrollElements.forEach(el => observer.observe(el));
+
+            // ===== NAVBAR SCROLL =====
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', function () {
+                navbar.classList.toggle('scrolled', window.scrollY > 40);
+            }, { passive: true });
+
+            // ===== HAMBURGER MENU =====
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('navLinks');
+
+            hamburger.addEventListener('click', function () {
+                const isOpen = navLinks.classList.toggle('open');
+                hamburger.classList.toggle('active');
+                hamburger.setAttribute('aria-expanded', isOpen);
+                document.body.style.overflow = isOpen ? 'hidden' : '';
+            });
+
+            navLinks.querySelectorAll('a').forEach(function (link) {
+                link.addEventListener('click', function () {
+                    navLinks.classList.remove('open');
+                    hamburger.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                    document.body.style.overflow = '';
+                });
+            });
+
+            // ===== SCROLL REVEAL =====
+            const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+
+            const revealObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.12,
+                rootMargin: '0px 0px -30px 0px'
+            });
+
+            revealElements.forEach(function (el) {
+                revealObserver.observe(el);
+            });
+
+            // ===== COUNTER ANIMATION =====
+            const counters = document.querySelectorAll('[data-count]');
+
+            const counterObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        const el = entry.target;
+                        const target = parseInt(el.getAttribute('data-count'), 10);
+                        let current = 0;
+                        const duration = 2000;
+                        const startTime = performance.now();
+
+                        function animateCounter(time) {
+                            const progress = Math.min((time - startTime) / duration, 1);
+                            const eased = 1 - Math.pow(1 - progress, 3);
+                            current = Math.round(eased * target);
+                            el.textContent = current + (target > 1 ? '+' : '');
+                            if (progress < 1) {
+                                requestAnimationFrame(animateCounter);
+                            } else {
+                                el.textContent = target + (target > 1 ? '+' : '');
+                            }
+                        }
+
+                        requestAnimationFrame(animateCounter);
+                        counterObserver.unobserve(el);
+                    }
+                });
+            }, { threshold: 0.4 });
+
+            counters.forEach(function (el) {
+                counterObserver.observe(el);
+            });
+
+            // ===== SMOOTH SCROLL =====
+            document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+                anchor.addEventListener('click', function (e) {
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    const target = document.querySelector(targetId);
+                    if (target) {
+                        e.preventDefault();
+                        const offset = 80;
+                        const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                        window.scrollTo({ top: top, behavior: 'smooth' });
+                    }
+                });
+            });
+
+            // ===== CONSOLE =====
+            console.log('%c🚀 WebYow — We Build Your World', 'font-size:24px; font-weight:800; color:#2563EB;');
+            console.log('%cPremium Software Development & Technology Solutions', 'font-size:14px; color:#777;');
+
+        })();
     </script>
 
 </body>
